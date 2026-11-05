@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        body {
+            margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #000; color: #fff; display: flex; justify-content: center; align-items: center; height: 100vh;
+        }
+        .nav-link { position: absolute; top: 20px; left: 20px; color: #0095f6; text-decoration: none; font-weight: bold; }
+        .container { display: flex; width: 100%; max-width: 900px; height: 600px; border: 1px solid #262626; }
+        .left-panel { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 40px; text-align: center; }
+        .left-panel h2 { font-size: 32px; margin-bottom: 20px; font-weight: 400; }
+        .left-panel span { color: #e1306c; }
+        .left-panel img { width: 300px; margin-top: 20px; }
+        .right-panel { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 40px; border-left: 1px solid #262626; }
+        .logo { width: 50px; height: 50px; margin-bottom: 30px; }
+        .form-group { margin-bottom: 15px; }
+        .form-group input {
+            width: 100%; padding: 15px; background: #121212; border: 1px solid #363636; border-radius: 5px;
+            color: #fff; font-size: 14px; box-sizing: border-box;
+        }
+        .form-group input:focus { outline: none; border-color: #555; }
+        .btn-login {
+            width: 100%; padding: 12px; background: #0095f6; color: #fff; border: none; border-radius: 8px;
+            font-size: 16px; font-weight: bold; cursor: pointer; margin-top: 10px;
+        }
+        .forgot { text-align: center; margin-top: 20px; color: #fff; text-decoration: none; font-size: 14px; display: block;}
+        .btn-outline {
+            width: 100%; padding: 12px; background: transparent; color: #0095f6; border: 1px solid #363636; border-radius: 8px;
+            font-size: 16px; font-weight: bold; cursor: pointer; margin-top: 15px; text-align: center;
+        }
+        .btn-outline.facebook { border: none; margin-top: 30px; }
+        .signup-link { text-align: center; margin-top: 30px; font-size: 14px; color: #a8a8a8;}
+        .signup-link a { color: #0095f6; text-decoration: none; font-weight: bold;}
+    </style>
+</head>
+<body>
+    <a href="index.html" class="nav-link">← Back to Menu</a>
+    <div class="container">
+        <div class="left-panel">
+            <h2>See everyday moments from<br><br>your <span>close friends</span>.</h2>
+            <img src="https://static.cdninstagram.com/rsrc.php/v3/y5/r/8O1z8U4g7vP.png" alt="Friends">
+        </div>
+        <div class="right-panel">
+            <svg class="logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #fff;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            <h3 style="margin-top: 0; margin-bottom: 30px;">Log into Instagram</h3>
+            <form>
+                <div class="form-group"><input type="text" placeholder="Mobile number, username or email" required></div>
+                <div class="form-group"><input type="password" placeholder="Password" required></div>
+                <button type="submit" class="btn-login">Log in</button>
+            </form>
+            <a href="#" class="forgot">Forgot password?</a>
+            <button class="btn-outline facebook">Log in with Facebook</button>
+            <button class="btn-outline">Create new account</button>
+            <div class="signup-link">Don't have an account? <a href="#">Sign up</a></div>
+        </div>
+    </div>
+</body>
+</html>
